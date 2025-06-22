@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
 
 interface AppProps {
   message?: string;
@@ -6,8 +6,9 @@ interface AppProps {
 
 
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const App: FunctionComponent<AppProps> = ({message}) => {
-  const [name, setName] = useState<string>("");
+  // eslint-disable-next-line react/react-in-jsx-scope
   return <h1>Hello World!</h1>
 }
 
