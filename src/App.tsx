@@ -1,15 +1,16 @@
-import { FunctionComponent } from "react";
+/* eslint-disable react/react-in-jsx-scope */
+import { FunctionComponent } from 'react'
+
+// Components
+import Header from './components/header/header.component'
 
 interface AppProps {
-  message?: string;
+  message?: string
 }
-
-
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const App: FunctionComponent<AppProps> = ({message}) => {
-  // eslint-disable-next-line react/react-in-jsx-scope
-  return <h1>Hello World!</h1>
+const App: FunctionComponent<AppProps> = ({ message }) => {
+  return <Header />
 }
 
-export default App;
+export default App
